@@ -386,3 +386,32 @@ a {
     padding-left: 0.5rem;
   }
 }
+
+/* Media */
+
+.media {
+  display: flex;
+}
+
+.media__icon {
+  margin-top: 1rem;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  font-size: 2.4rem;
+  margin-top: 0;
+}
+
+.media__description {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .media__title {
+    font-size: 1.8rem;
+  }
+}
