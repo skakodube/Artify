@@ -337,7 +337,6 @@ a {
 .card .card__body {
   padding: 2rem 3rem;
 }
-
 .card--primary .card__header {
   background: var(--color-primary);
   color: white;
@@ -349,6 +348,23 @@ a {
 }
 
 /* Plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
 
 .plan__name {
   color: #fff;
@@ -737,7 +753,7 @@ a {
   }
 }
 
-/* Hero */
+/* Block Hero */
 
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
@@ -765,7 +781,7 @@ a {
   }
 }
 
-/* Domain */
+/* Block Domain */
 
 .block-domain .block__header > p {
   max-width: 700px;
@@ -809,4 +825,15 @@ a {
     display: block;
     margin-left: 0.5rem;
   }
+}
+
+/* Block Plans */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
