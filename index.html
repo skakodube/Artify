@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deploy your website in less than 60 seconds.">
+    <meta property="og:title" content="Moshify...">
+    <meta property="og:description" content="Deploy your website in less than 60 seconds.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
     <title>Moshify</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,10 +16,440 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
+    <div class="block--dark">
+      <div class="container">
+        <nav class="nav collapsible">
+          <img src="/images/logo.svg" alt="logo" />
+          <svg class="icon icon--white nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+          <ul class="nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Hosting</a></li>
+            <li class="nav__item"><a href="#">VPS</a></li>
+            <li class="nav__item"><a href="#">Domain</a></li>
+            <li class="nav__item"><a href="#">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <div class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <p class="hero__tagline">
+            Deploy your website in less than 60 seconds.
+          </p>
+          <a href="#" class="btn btn--accent btn--stretched">get started</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+          <img class="hero__image" src="/images/banner.png" alt=""
+        /></picture>
+      </div>
+    </section>
+
+    <section class="block container block-domain">
+      <div class="block__header">
+        <h2 class="block__heading">
+          The best webhosting Starting at per month
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+          suscipit dolores quod veritatis eius aperiam nulla facere illo veniam
+          fugit.
+        </p>
+      </div>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter domain here..." />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          <label class="btn__label">Search</label>
+        </button>
+      </div>
+      <ul class="block-domain__prices list">
+        <li>.com $9.26</li>
+        <li><span class="badge badge--secondary">.sg $7.91</span></li>
+        <li>.space $12.98</li>
+        <li>.info $14.15</li>
+        <li>.net $16.15</li>
+        <li>.xyz $10.15</li>
+        <a class="block-domain__more">More</a>
+      </ul>
+    </section>
+
+    <section class="block container block-plans">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <div class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <p class="plan__description">Entry start on the cloud</p>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <div class="card__header">
+              <h3 class="plan__name">Business</h3>
+              <span class="plan__price">$24</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">20% OFF</span>
+              <p class="plan__description">Optimal Cloud Experience</p>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <div class="card__header">
+              <h3 class="plan__name">Business plus</h3>
+              <span class="plan__price">$54</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <p class="plan__description">Entry start on the cloud</p>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block container block-feature">
+      <div class="block__header">
+        <h2 class="block__heading">Host on the Cloud to Keep Growing</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum
+          assumenda corrupti fuga repellendus sunt.
+        </p>
+      </div>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right>
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            quia rem temporibus laudantium ipsum? Reiciendis omnis
+            necessitatibus consectetur dolorem asperiores laudantium neque
+            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+          </p>
+          <a class="link-arrow" href="#">learn more</a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/easy.png 1x, images/easy@2x.png 2x" />
+          <img class="feature__image" src="images/easy@2x.png" alt=""
+        /></picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-left>
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Simply fast websites</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            quia rem temporibus laudantium ipsum? Reiciendis omnis
+            necessitatibus consectetur dolorem asperiores laudantium neque
+            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+          </p>
+          <a class="link-arrow" href="#">learn more</a>
+        </div>
+        <img class="feature__image" src="images/fast.jpg" alt="" />
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right>
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#settings"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Wordpress made easy</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            quia rem temporibus laudantium ipsum? Reiciendis omnis
+            necessitatibus consectetur dolorem asperiores laudantium neque
+            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+          </p>
+          <a class="link-arrow" href="#">learn more</a>
+        </div>
+        <img class="feature__image" src="images/wordpress.jpg" alt="" />
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-left>
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">24/7 Expert Support</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            quia rem temporibus laudantium ipsum? Reiciendis omnis
+            necessitatibus consectetur dolorem asperiores laudantium neque
+            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+          </p>
+          <a class="link-arrow" href="#">learn more</a>
+        </div>
+        <img class="feature__image" src="images/support.jpg" alt="" />
+      </article>
+    </section>
+
+    <section class="block block--dark block--skewed-right block-showcase">
+      <div class="block__header">
+        <h2 class="block__heading">User-Friendy Control Panel</h2>
+      </div>
+      <div class="container grid grid--1x2 block-showcase__body">
+        <img class="block-showcase__image" src="/images/ipad.png" alt="" />
+
+        <ul class="list">
+          <li>
+            <div class="media media--dark">
+              <div class="media__icon">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#computer"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <p class="media__description">
+                  Our cloud plans include easy onboarding for new and existing
+                  sites and managed WordPress and WooCommerce auto-updates.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media media--dark">
+              <div class="media__icon">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#growth"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Staging, Git & WP-CLI</h3>
+                <p class="media__description">
+                  We make your WordPress and WooCommerce development flow easier
+                  with a convenient staging tool and Git and WP-CLI integration.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media media--dark">
+              <div class="media__icon">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Dynamic Caching & More</h3>
+                <p class="media__description">
+                  Speed up your WordPress and Woo sites with our SG Optimizer
+                  plugin through smart dynamic caching and multiple other
+                  performance optimizations.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block__header">
+        <h2 class="block__heading">What our Customer are Saying</h2>
+        <p>
+          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+          maecenas accumsan.
+        </p>
+      </div>
+      <div class="container">
+        <div style="margin: 3rem" class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img
+                src="/images/testimonial.jpg"
+                alt="a happy customer photo."
+              />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="qoute">
+              <p class="qoute__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                accusantium necessitatibus et beatae quasi illum magnam ipsam
+                ducimus porro at saepe natus quis debitis, consequuntur, fuga
+                quas. Obcaecati, natus quia.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__icon">
+                    <svg class="icon icon--primary qoute__icon">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title qoute__author">John Smith</h3>
+                    <p class="media__description qoute__company">Company ABC</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <img
+              class="icon collapsible__chevron"
+              src="/images/chevron.svg"
+              alt="icon-chevron"
+            />
+          </div>
+
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Wordpress Hosting</a></li>
+              <li><a href="#">Free Automated Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+              <li><a href="#">Domain Names</a></li>
+              <li><a href="#">Monthly Web Hosting</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <img
+              class="icon collapsible__chevron"
+              src="/images/chevron.svg"
+              alt="icon-chevron"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Green Holding</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <img
+              class="icon collapsible__chevron"
+              src="/images/chevron.svg"
+              alt="icon-chevron"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowladge Base</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">System Status</a></li>
+              <li><a href="#">Web Hosting</a></li>
+              <li><a href="#">DreamCopmute</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Domains</h2>
+            <img
+              class="icon collapsible__chevron"
+              src="/images/chevron.svg"
+              alt="icon-chevron"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Domain Center</a></li>
+              <li><a href="#">Domain Transfer</a></li>
+              <li><a href="#">Free Domain</a></li>
+              <li><a href="#">XYZ Domain</a></li>
+              <li><a href="#">Cheap SSL Certificate</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer__brand">
+          <img src="/images/logo.svg" alt="" />
+          <p class="footer__copyright">Copyright © 2020 mosh</p>
+        </section>
+      </div>
+    </footer>
+
     <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
