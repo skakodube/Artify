@@ -19,61 +19,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <div class="block--dark">
+    <div class="block--primary">
       <div class="container">
         <nav class="nav collapsible">
-          <img src="/images/logo.svg" alt="logo" />
+          <img class="nav__logo" src="/images/logo.png" alt="logo" />
           <svg class="icon icon--white nav__toggler">
             <use xlink:href="images/sprite.svg#menu"></use>
           </svg>
           <ul class="nav__list collapsible__content">
-            <li class="nav__item"><a href="#">Hosting</a></li>
-            <li class="nav__item"><a href="#">VPS</a></li>
-            <li class="nav__item"><a href="#">Domain</a></li>
-            <li class="nav__item"><a href="#">Pricing</a></li>
+            <li class="nav__item"><a href="#">Artists</a></li>
+            <li class="nav__item"><a href="#">Events</a></li>
+            <li class="nav__item"><a href="#">Blog</a></li>
+            <li class="nav__item"><a href="#">Store</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <section class="block block--dark block--skewed-left hero">
+    <section class="block block--primary block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <div class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">
-            Deploy your website in less than 60 seconds.
-          </p>
-          <a href="#" class="btn btn--accent btn--stretched">get started</a>
+        <div class="block__header hero__content" data-aos="fade-right">
+          <h1 class="block__heading">Artistic Journeys Unleashed</h1>
+          <p class="hero__tagline">Begin Your Artistic Odyssey Today.</p>
+          <a href="#" class="btn btn--accent btn--stretched">start exploring</a>
         </div>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
-          <source
-            type="image/png"
-            srcset="images/banner.png 1x, images/banner@2x.png 2x" />
-          <img class="hero__image" src="/images/banner.png" alt=""
-        /></picture>
+        <img
+          class="hero__image"
+          src="/images/balloon-62.png"
+          alt=""
+          data-aos="fade-up"
+        />
       </div>
     </section>
 
     <section class="block container block-domain">
       <div class="block__header">
-        <h2 class="block__heading">
-          The best webhosting Starting at per month
-        </h2>
+        <h2 class="block__heading">Discover your insipration</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-          suscipit dolores quod veritatis eius aperiam nulla facere illo veniam
-          fugit.
+          Delve into a World of Endless Inspiration: Where Every Search Unveils
+          New Creative Possibilities.
         </p>
       </div>
       <div class="input-group">
@@ -86,12 +79,13 @@
         </button>
       </div>
       <ul class="block-domain__prices list">
-        <li>.com $9.26</li>
-        <li><span class="badge badge--secondary">.sg $7.91</span></li>
-        <li>.space $12.98</li>
-        <li>.info $14.15</li>
-        <li>.net $16.15</li>
-        <li>.xyz $10.15</li>
+        <li>Mediums</li>
+        <li><span class="badge badge--secondary">Styles</span></li>
+        <li>Genres</li>
+        <li>Artists</li>
+        <li>Periods</li>
+        <li>Themes</li>
+        <li>Subjects</li>
         <li>
           <a class="block-domain__more">More</a>
         </li>
@@ -103,18 +97,17 @@
         <div class="plan">
           <div class="card card--secondary">
             <div class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
+              <h3 class="plan__name">Basic</h3>
+              <span class="plan__price">$9</span>
               <span class="plan__billing-cycle">/month</span>
               <span class="badge badge--secondary badge--small">10% OFF</span>
-              <p class="plan__description">Entry start on the cloud</p>
+              <p class="plan__description">Entry to Inspiration</p>
             </div>
             <div class="card__body">
               <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
+                <li class="list__item">Access to Artist Profiles</li>
+                <li class="list__item">Weekly Newsletter Updates</li>
+                <li class="list__item">Early Access and Previews</li>
               </ul>
               <button class="btn btn--outline btn--block">buy now</button>
             </div>
@@ -123,38 +116,39 @@
         <div class="plan plan--popular">
           <div class="card card--primary">
             <div class="card__header">
-              <h3 class="plan__name">Business</h3>
-              <span class="plan__price">$24</span>
+              <h3 class="plan__name">Premium</h3>
+              <span class="plan__price">$15</span>
               <span class="plan__billing-cycle">/month</span>
               <span class="badge badge--primary badge--small">20% OFF</span>
-              <p class="plan__description">Optimal Cloud Experience</p>
+              <p class="plan__description">Evaluate Your Art Journey</p>
             </div>
             <div class="card__body">
               <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
+                <li class="list__item">Unlimited Gallery Access</li>
+                <li class="list__item">Exclusive Innovations</li>
+                <li class="list__item">Virtual Tours and Events</li>
+                <li class="list__item">Customer Support</li>
               </ul>
               <button class="btn btn--outline btn--block">buy now</button>
             </div>
           </div>
         </div>
+
         <div class="plan">
           <div class="card card--secondary">
             <div class="card__header">
-              <h3 class="plan__name">Business plus</h3>
-              <span class="plan__price">$54</span>
+              <h3 class="plan__name">Artisan Plan</h3>
+              <span class="plan__price">$30</span>
               <span class="plan__billing-cycle">/month</span>
               <span class="badge badge--secondary badge--small">10% OFF</span>
-              <p class="plan__description">Entry start on the cloud</p>
+              <p class="plan__description">Craft Your Creative Oasis</p>
             </div>
             <div class="card__body">
               <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
+                <li class="list__item">All features of the Premium Plan</li>
+                <li class="list__item">Monthly Art Box Delivery</li>
+
+                <li class="list__item">Special Discounts on Merchandise</li>
               </ul>
               <button class="btn btn--outline btn--block">buy now</button>
             </div>
@@ -165,10 +159,10 @@
 
     <section class="block container block-feature">
       <div class="block__header">
-        <h2 class="block__heading">Host on the Cloud to Keep Growing</h2>
+        <h2 class="block__heading">Unlock Endless Creativity</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum
-          assumenda corrupti fuga repellendus sunt.
+          Embark on a Journey of Infinite Creativity: Where Boundless
+          Inspiration Awaits, Unleash Your Artistic Potential Today
         </p>
       </div>
       <article class="grid grid--1x2 feature">
@@ -178,24 +172,20 @@
               <use xlink:href="images/sprite.svg#easy"></use>
             </svg>
           </span>
-          <h3 class="feature__heading">Super Easy to Use</h3>
+          <h3 class="feature__heading">Diverse Artworks</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            quia rem temporibus laudantium ipsum? Reiciendis omnis
-            necessitatibus consectetur dolorem asperiores laudantium neque
-            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+            Dive into our expansive repository featuring an eclectic mix of
+            artistic expressions. From classical masterpieces to avant-garde
+            innovations, discover a spectrum of styles, mediums, and genres,
+            ensuring there's something to captivate every artistic sensibility.
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
-          <source
-            type="image/png"
-            srcset="images/easy.png 1x, images/easy@2x.png 2x" />
-          <img class="feature__image" src="images/easy@2x.png" alt=""
-        /></picture>
+        <img
+          class="feature__image"
+          src="images/augmented-reality-50.svg"
+          alt=""
+        />
       </article>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-left">
@@ -204,16 +194,18 @@
               <use xlink:href="images/sprite.svg#computer"></use>
             </svg>
           </span>
-          <h3 class="feature__heading">Simply fast websites</h3>
+          <h3 class="feature__heading">Interactive Exhibitions</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            quia rem temporibus laudantium ipsum? Reiciendis omnis
-            necessitatibus consectetur dolorem asperiores laudantium neque
-            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+            Immerse yourself in the captivating world of art through our
+            interactive exhibitions. Journey through virtual galleries
+            meticulously curated to showcase the finest works of renowned
+            artists and emerging talents alike. Engage deeply with each piece,
+            gaining insights and perspectives that transcend physical
+            boundaries.
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <img class="feature__image" src="images/fast.jpg" alt="" />
+        <img class="feature__image" src="images/conversation-100.svg" alt="" />
       </article>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-right">
@@ -222,16 +214,18 @@
               <use xlink:href="images/sprite.svg#settings"></use>
             </svg>
           </span>
-          <h3 class="feature__heading">Wordpress made easy</h3>
+          <h3 class="feature__heading">Community Engagement</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            quia rem temporibus laudantium ipsum? Reiciendis omnis
-            necessitatibus consectetur dolorem asperiores laudantium neque
-            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+            Join a vibrant community of art enthusiasts, creators, and
+            connoisseurs. Share your passion, exchange ideas, and forge
+            meaningful connections with like-minded individuals from around the
+            globe. Through collaborative projects, discussions, and events,
+            nurture your love for art while enriching the collective creative
+            experience.
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <img class="feature__image" src="images/wordpress.jpg" alt="" />
+        <img class="feature__image" src="images/podcaster-87.svg" alt="" />
       </article>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-left">
@@ -240,25 +234,32 @@
               <use xlink:href="images/sprite.svg#clock"></use>
             </svg>
           </span>
-          <h3 class="feature__heading">24/7 Expert Support</h3>
+          <h3 class="feature__heading">Customizable Collections</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            quia rem temporibus laudantium ipsum? Reiciendis omnis
-            necessitatibus consectetur dolorem asperiores laudantium neque
-            deserunt aut ea fugiat, obcaecati eligendi expedita provident?
+            Tailor your art discovery experience to suit your unique preferences
+            and interests. With our customizable collections feature, curate
+            your personal gallery, saving your favorite artworks and creating
+            bespoke playlists curated to inspire and delight. Dive deep into the
+            world of art on your terms, fostering a journey that resonates with
+            your individual vision and taste.
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <img class="feature__image" src="images/support.jpg" alt="" />
+        <img class="feature__image" src="images/designer-2-53.svg" alt="" />
       </article>
     </section>
 
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block block--secondary block--skewed-right block-showcase">
       <div class="block__header">
-        <h2 class="block__heading">User-Friendy Control Panel</h2>
+        <h2 class="block__heading">Inspiring Artistry in Action</h2>
       </div>
       <div class="container grid grid--1x2 block-showcase__body">
-        <img class="block-showcase__image" src="/images/ipad.png" alt="" />
+        <img
+          class="block-showcase__image"
+          src="/images/designer-2-66.png"
+          alt=""
+          data-aos="fade-up"
+        />
 
         <ul class="list">
           <li>
@@ -269,10 +270,10 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <h3 class="media__title">Masters' Corner</h3>
                 <p class="media__description">
-                  Our cloud plans include easy onboarding for new and existing
-                  sites and managed WordPress and WooCommerce auto-updates.
+                  Explore the brilliance of iconic artists and their enduring
+                  contributions to the world of art.
                 </p>
               </div>
             </div>
@@ -285,10 +286,10 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Staging, Git & WP-CLI</h3>
+                <h3 class="media__title">Emerging Voices</h3>
                 <p class="media__description">
-                  We make your WordPress and WooCommerce development flow easier
-                  with a convenient staging tool and Git and WP-CLI integration.
+                  Encounter the raw talent and bold experimentation of rising
+                  stars shaping the future of art.
                 </p>
               </div>
             </div>
@@ -301,12 +302,12 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
+                <h3 class="media__title">Artisan Spotlight</h3>
                 <p class="media__description">
-                  Speed up your WordPress and Woo sites with our SG Optimizer
-                  plugin through smart dynamic caching and multiple other
-                  performance optimizations.
+                  Gain intimate glimpses into the creative minds and unique
+                  journeys of featured artisans and creators.
                 </p>
+                <hr />
               </div>
             </div>
           </li>
@@ -316,20 +317,14 @@
 
     <section class="block">
       <div class="block__header">
-        <h2 class="block__heading">What our Customer are Saying</h2>
-        <p>
-          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas accumsan.
-        </p>
+        <h2 class="block__heading">Creators' Corner</h2>
+        <p>Where Visionaries Speak</p>
       </div>
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <div style="margin: 3rem" class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
-              <img
-                src="/images/testimonial.jpg"
-                alt="a happy customer photo."
-              />
+              <img src="/images/testimon.jpg" alt="a happy customer photo." />
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                   <use xlink:href="images/sprite.svg#quotes"></use>
@@ -338,21 +333,21 @@
             </div>
             <blockquote class="qoute">
               <p class="qoute__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                accusantium necessitatibus et beatae quasi illum magnam ipsam
-                ducimus porro at saepe natus quis debitis, consequuntur, fuga
-                quas. Obcaecati, natus quia.
+                Art is my refuge, my rebellion, my revelation. In each stroke, I
+                pour my essence, unraveling the complexities of existence, and
+                weaving tales that resonate with the soul's deepest yearnings
+                and truths.
               </p>
               <footer>
                 <div class="media">
                   <div class="media__icon">
-                    <svg class="icon icon--primary qoute__icon">
+                    <svg class="icon icon--accent qoute__icon">
                       <use xlink:href="images/sprite.svg#line"></use>
                     </svg>
                   </div>
                   <div class="media__body">
-                    <h3 class="media__title qoute__author">John Smith</h3>
-                    <p class="media__description qoute__company">Company ABC</p>
+                    <h3 class="media__title qoute__author">Jenny Minton</h3>
+                    <p class="media__description qoute__company">Company 123</p>
                   </div>
                 </div>
               </footer>
@@ -362,11 +357,11 @@
       </div>
     </section>
 
-    <footer class="block block--dark footer">
+    <footer class="block block--primary footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <h2 class="collapsible__heading footer__heading">Explore</h2>
             <img
               class="icon collapsible__chevron"
               src="/images/chevron.svg"
@@ -376,17 +371,17 @@
 
           <div class="collapsible__content">
             <ul class="list footer__list">
-              <li><a href="#">Wordpress Hosting</a></li>
-              <li><a href="#">Free Automated Wordpress</a></li>
-              <li><a href="#">Migrations</a></li>
-              <li><a href="#">Domain Names</a></li>
-              <li><a href="#">Monthly Web Hosting</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Artists</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blog</a></li>
             </ul>
           </div>
         </section>
         <section class="collapsible footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <h2 class="collapsible__heading footer__heading">Resources</h2>
             <img
               class="icon collapsible__chevron"
               src="/images/chevron.svg"
@@ -395,18 +390,39 @@
           </div>
           <div class="collapsible__content">
             <ul class="list footer__list">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Affiliates</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Copyright Information</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
               <li><a href="#">Careers</a></li>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Green Holding</a></li>
+              <li><a href="#">Press Kit</a></li>
             </ul>
           </div>
         </section>
 
         <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Connect</h2>
+            <img
+              class="icon collapsible__chevron"
+              src="/images/chevron.svg"
+              alt="icon-chevron"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Pinterest</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible collapsible--expanded footer__section">
           <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
             <img
@@ -417,39 +433,18 @@
           </div>
           <div class="collapsible__content">
             <ul class="list footer__list">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Knowladge Base</a></li>
-              <li><a href="#">Forums</a></li>
-              <li><a href="#">System Status</a></li>
-              <li><a href="#">Web Hosting</a></li>
-              <li><a href="#">DreamCopmute</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="collapsible collapsible--expanded footer__section">
-          <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Domains</h2>
-            <img
-              class="icon collapsible__chevron"
-              src="/images/chevron.svg"
-              alt="icon-chevron"
-            />
-          </div>
-          <div class="collapsible__content">
-            <ul class="list footer__list">
-              <li><a href="#">Domain Center</a></li>
-              <li><a href="#">Domain Transfer</a></li>
-              <li><a href="#">Free Domain</a></li>
-              <li><a href="#">XYZ Domain</a></li>
-              <li><a href="#">Cheap SSL Certificate</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Donate</a></li>
             </ul>
           </div>
         </section>
 
         <div class="footer__brand">
-          <img src="/images/logo.svg" alt="" />
-          <p class="footer__copyright">Copyright © 2020 mosh</p>
+          <img src="/images/logo.png" alt="" />
+          <p class="footer__copyright">Copyright © 2024 Edvin-Mark</p>
         </div>
       </div>
     </footer>

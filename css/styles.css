@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
+  --color-primary: #005034;
+  --color-secondary: #43a271;
+  --color-accent: #f14e26;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
@@ -18,8 +18,13 @@
 /* Typography */
 
 ::selection {
-  background: var(--color-primary);
-  color: #fff;
+  background: var(--color-headings);
+  color: #ffffff;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 html {
@@ -27,7 +32,7 @@ html {
 }
 
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
@@ -42,7 +47,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -73,6 +78,16 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+
+/* Decor Element */
+
+hr {
+  width: 15%;
+  height: 3px;
+  background: var(--color-accent);
+  border: 0;
+  margin: 0;
 }
 
 /* Links */
@@ -183,6 +198,10 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--accent {
+  fill: var(--color-accent);
+}
+
 .icon--white {
   fill: #fff;
 }
@@ -218,7 +237,7 @@ a {
   margin: 1rem 0;
   padding: 2rem 3rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   white-space: nowrap;
 }
 
@@ -251,7 +270,7 @@ a {
 
 .btn--accent {
   background-color: var(--color-accent);
-  color: white;
+  color: #fff;
 }
 
 .btn--accent:hover {
@@ -281,11 +300,11 @@ a {
   padding-left: 6rem;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
   }
-}
+} */
 
 /* Inputs */
 
@@ -383,20 +402,6 @@ a {
   transition: transform 0.2s ease-out;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
-.plan:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.plan--popular:hover {
-  transform: scale(1.15);
-  cursor: pointer;
-}
-
 .plan__name {
   color: #fff;
   font-size: 2.4rem;
@@ -414,12 +419,15 @@ a {
   margin-right: 1rem;
 }
 
+/* --color-primary: #005034; */
+/* --color-secondary: #43a271; */
+
 .plan .badge--primary {
-  background: #126de4;
+  background: #00462d;
 }
 
 .plan .badge--secondary {
-  background: #02cdf1;
+  background: #3e9669;
 }
 
 .plan__description {
@@ -451,6 +459,18 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .plan:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .plan--popular {
+    transform: scale(1.1);
+  }
+
+  .plan--popular:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
   .plan__name {
     font-size: 1.4rem;
   }
@@ -700,13 +720,23 @@ a {
   margin-top: 0;
 }
 
-.block--dark {
-  background: #000;
+.block--primary {
+  background: var(--color-primary);
   color: #b9c3cf;
 }
 
-.block--dark .block__heading {
+.block--primary .block__heading {
   color: #fff;
+}
+
+.block--secondary {
+  background: var(--color-secondary);
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.block--secondary .block__heading {
+  color: var(--color-primary);
 }
 
 .block--skewed-right {
@@ -727,11 +757,16 @@ a {
 /* Navbar */
 
 .nav {
-  background: #000;
+  background: var(--color-primary);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.nav .nav__logo {
+  width: 160px;
+  margin-left: 0.5rem;
 }
 
 .nav__list {
@@ -743,17 +778,17 @@ a {
 
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #236945;
 }
 
 .nav__item > a {
-  color: #d2d0db;
+  color: #ffffff;
   transition: color 0.15s;
 }
 
 .nav__item > a:hover,
 .nav__item > a:focus {
-  color: #fff;
+  color: var(--color-accent);
 }
 
 .nav__toggler {
@@ -800,7 +835,7 @@ a {
 /* Block Hero */
 
 .hero__tagline {
-  color: #b9c3cf;
+  color: #ffffff;
   font-size: 2rem;
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
@@ -912,7 +947,7 @@ a {
 }
 
 .block-showcase .media__title {
-  color: #fff;
+  color: var(--color-primary);
 }
 
 @media screen and (min-width: 768px) {
@@ -932,7 +967,7 @@ a {
 /* Footer */
 
 .footer {
-  background: #232323;
+  background: #292929;
 }
 
 .footer__section {
@@ -967,12 +1002,13 @@ a {
 }
 
 .footer a {
-  color: #777;
+  font-weight: 200;
+  color: #ababab;
   transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: #fff;
+  color: var(--color-accent);
 }
 
 @media screen and (min-width: 768px) {
