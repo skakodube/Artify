@@ -158,8 +158,6 @@ a {
 
 /* Lists */
 
-/* TODO: Fix tick icon position to centered */
-
 .list {
   padding-left: 0;
   list-style: none;
@@ -300,12 +298,6 @@ a {
   padding-left: 6rem;
 }
 
-/* @media screen and (min-width: 1024px) {
-  .btn {
-    font-size: 1.5rem;
-  }
-} */
-
 /* Inputs */
 
 .input {
@@ -344,10 +336,6 @@ a {
   width: 0;
 }
 
-/* .input-group .btn__label {
-  display: none;
-} */
-
 .input-group .btn .icon {
   margin-right: 0;
 }
@@ -365,10 +353,6 @@ a {
   .input-group .btn {
     font-size: 1.6rem;
   }
-
-  /* .input-group .btn__label {
-    display: inline-block;
-  } */
 
   .input-group .btn .icon {
     margin-right: 1rem;
@@ -418,9 +402,6 @@ a {
   font-weight: 300;
   margin-right: 1rem;
 }
-
-/* --color-primary: #005034; */
-/* --color-secondary: #43a271; */
 
 .plan .badge--primary {
   background: #00462d;
