@@ -602,7 +602,7 @@ a {
   right: -32px;
 }
 
-.testimonial__image > img {
+.testimonial__image img {
   width: 100%;
 }
 
@@ -937,7 +937,7 @@ a {
 
 /* Block Showcase */
 
-.block-showcase .block-showcase__image {
+.block-showcase .block-showcase__image img {
   width: 100%;
   margin-bottom: 4rem;
 }
@@ -957,10 +957,12 @@ a {
 
   .block-showcase .block-showcase__image {
     margin-right: 4rem;
+    justify-self: flex-end;
+  }
 
+  .block-showcase .block-showcase__image img {
     width: auto;
     max-width: 700px;
-    justify-self: flex-end;
   }
 }
 

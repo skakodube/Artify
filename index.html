@@ -15,7 +15,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="#" />
     <meta property="og:url" content="#" />
-    <title>Moshify</title>
+    <title>Artify</title>
+    <link rel="icon" type="image/png" href="/images/logo_icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,12 +53,23 @@
           <p class="hero__tagline">Begin Your Artistic Odyssey Today.</p>
           <a href="#" class="btn btn--accent btn--stretched">start exploring</a>
         </div>
-        <img
-          class="hero__image"
-          src="/images/balloon-62.png"
-          alt=""
-          data-aos="fade-up"
-        />
+
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/balloon.webp x1, images/balloon@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/balloon.png x1, images/balloon@2x.png 2x"
+          />
+          <img
+            class="hero__image"
+            src="/images/balloon@2x.png"
+            alt=""
+            data-aos="fade-up"
+          />
+        </picture>
       </div>
     </section>
 
@@ -181,11 +193,27 @@
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <img
-          class="feature__image"
-          src="images/augmented-reality-50.svg"
-          alt=""
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              images/augmented-reality.webp    1x,
+              images/augmented-reality@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              images/augmented-reality.png    1x,
+              images/augmented-reality@2x.png 2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="images/augmented-reality@2x.png"
+            alt="augmented-reality illustration"
+          />
+        </picture>
       </article>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-left">
@@ -205,7 +233,24 @@
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <img class="feature__image" src="images/conversation-100.svg" alt="" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              images/conversation.webp    1x,
+              images/conversation@2x.webp 2x
+            " />
+          <source
+            type="image/png"
+            srcset="
+              images/conversation.png    1x,
+              images/conversation@2x.png 2x
+            " />
+          <img
+            class="feature__image"
+            src="images/conversation@2x.png"
+            alt="conversation illustration"
+        /></picture>
       </article>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-right">
@@ -225,7 +270,18 @@
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <img class="feature__image" src="images/podcaster-87.svg" alt="" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/podcaster.webp 1x, images/podcaster@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/podcaster.png 1x, images/podcaster@2x.png 2x" />
+          <img
+            class="feature__image"
+            src="images/podcaster@2x.png"
+            alt="podcaster illustration"
+        /></picture>
       </article>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-left">
@@ -245,7 +301,18 @@
           </p>
           <a class="link-arrow" href="#">learn more</a>
         </div>
-        <img class="feature__image" src="images/designer-2-53.svg" alt="" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/desktop.webp 1x, images/desktop@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/desktop.png 1x, images/desktop@2x.png 2x" />
+          <img
+            class="feature__image"
+            src="images/desktop@2x.png"
+            alt="desktop illustration"
+        /></picture>
       </article>
     </section>
 
@@ -254,12 +321,21 @@
         <h2 class="block__heading">Inspiring Artistry in Action</h2>
       </div>
       <div class="container grid grid--1x2 block-showcase__body">
-        <img
-          class="block-showcase__image"
-          src="/images/designer-2-66.png"
-          alt=""
-          data-aos="fade-up"
-        />
+        <picture class="block-showcase__image">
+          <source
+            type="image/webp"
+            srcset="images/designer.webp 1x, images/designer@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/designer.png 1x, images/designer@2x.png 2x"
+          />
+          <img
+            src="/images/designer@2x.png"
+            alt="designer illustration"
+            data-aos="fade-up"
+          />
+        </picture>
 
         <ul class="list">
           <li>
@@ -298,7 +374,7 @@
             <div class="media media--dark">
               <div class="media__icon">
                 <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                  <use xlink:href="images/sprite.svg#settings"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -324,7 +400,26 @@
         <div style="margin: 3rem" class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
-              <img src="/images/testimon.jpg" alt="a happy customer photo." />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/testimonial.webp    1x,
+                    images/testimonial@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpeg  "
+                  srcset="
+                    images/testimonial.jpg    1x,
+                    images/testimonial@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="/images/testimonial.jpg"
+                  alt="a happy customer photo."
+                />
+              </picture>
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                   <use xlink:href="images/sprite.svg#quotes"></use>
